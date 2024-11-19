@@ -12,13 +12,15 @@
 
 
 body {
+    display: grid;
+    place-items: center;
     font-family: "Sinkin", cursive;
     font-weight: 400;
-    font-size: clamp(1.2rem, 5vw + 3rem, 1.8rem);
+    font-size: clamp(1.2rem, 4vw + 6rem, 2rem);
     overflow-x: hidden;
     font-style: normal;
     letter-spacing: 2px;
-    height: auto;
+    height: 100vh;
     color: var(--warm-ff-color);
     background-image: linear-gradient(
         180deg,
@@ -40,16 +42,17 @@ body {
 main {
     text-align: center;
     font-weight: bold;
+    margin-block: 5vh;
 
 }
 main h1 {
     margin: 0;
-    font-size: clamp(1rem, 4vw + 4rem, 10rem);
+    font-size: clamp(1rem, 5vw + 4rem, rem);
     font-family: "Handle", cursive;
 }
 
 h2 {
-    font-size: clamp(2.5rem, 3vw + 1.7rem, 5rem);
+    font-size: clamp(2.5rem, 3vw + 2rem, 5rem);
 }
 
 a, footer {
@@ -57,27 +60,22 @@ a, footer {
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 3% 1%;
+    padding: 1%;
     color: var(--warm-ff-color);
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
-nav, .logo-holder {
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.logo-holder {
-    flex-direction: column;
-    margin-block: 3%;
+    flex-wrap: nowrap;
+    gap: 1rem;
 }
 
 .logo-holder .logo {
     width: 40vw;
 }
-
 
 /* Resets */
 a, img {
