@@ -38,11 +38,11 @@ main {
 }
 main h1 {
     margin: 0;
-    font-size: clamp(1rem, 5vw + 4rem, 10rem);
+    font-size: clamp(1rem, 4vw + 4rem, 10rem);
 }
 
 h2 {
-    font-size: clamp(2.5rem, 1.6vw + 1.7rem, 5rem);
+    font-size: clamp(2.5rem, 3vw + 1.7rem, 5rem);
 }
 
 a, footer {
@@ -102,6 +102,7 @@ footer .support-container, footer .contact-container {
 .social :last-child img {
     filter: invert(97%) sepia(6%) saturate(632%) hue-rotate(338deg) brightness(94%) contrast(88%);
 }
+
 
 @media (max-width: 576px) {
     .logo-holder .logo {
