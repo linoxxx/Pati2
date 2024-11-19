@@ -49,6 +49,7 @@ nav, .logo-holder {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .logo-holder {
@@ -106,3 +107,12 @@ footer .support-container, footer .contact-container {
     width: 3vw;
     opacity: 0.6;
 }
+
+@media (max-width: 576px) {
+    .logo-holder .logo {
+        width: 90%;
+    }
+    nav a {
+        font-size: 1.5rem;
+    }
+  }
