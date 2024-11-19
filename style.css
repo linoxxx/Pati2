@@ -71,17 +71,7 @@ nav, .logo-holder {
     width: 40vw;
 }
 
-.logo-holder .scroll {
-    max-width: 5%;
-    opacity: 0.4;
-    margin-top: 10vh;
-}
 
-
-article .article-line {
-    margin: 3rem auto;
-    
-}
 /* Resets */
 a, img {
     display: block; 
@@ -98,17 +88,11 @@ footer .support-container, footer .contact-container {
     margin: auto;
 }
 
-.donate {
-    border: 1px solid var(--warm-ff-color);
-    border-radius: 15px;
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 1rem;
-}
 
 .social {
     display: inline-flex;
     gap: 1.5rem;
+    margin-top: 2rem;
     
 }
 .social img {
