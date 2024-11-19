@@ -35,7 +35,7 @@ h2 {
     font-size: clamp(2.5rem, 1.6vw + 1.7rem, 5rem);
 }
 
-a {
+a, footer {
     text-decoration: none;
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
@@ -81,4 +81,28 @@ a, img {
     display: block; 
     height: auto;
     max-width: 100%;
+}
+
+/* Footer Adjustments */
+footer .support-container, footer .contact-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+.donate {
+    border: 1px solid var(--warm-ff-color);
+    border-radius: 15px;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.social {
+    display: inline-flex;
+    gap: 1rem;
+}
+.social img {
+    width: 3vw;
+    opacity: 0.6;
 }
