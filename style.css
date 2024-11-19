@@ -14,7 +14,7 @@
 body {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     flex-direction: column;
     font-family: "Sinkin", cursive;
     font-weight: 400;
@@ -50,12 +50,12 @@ main {
 }
 main h1 {
     margin: 0;
-    font-size: clamp(1rem, 5vw + 4rem, rem);
+    font-size: clamp(1rem, 7vw + 15rem, 6rem);
     
 }
 
-h2 {
-    font-size: clamp(2.5rem, 3vw + 2rem, 5rem);
+main h2 {
+    font-size: clamp(2.5rem, 3vw + 2rem, 6rem);
 }
 
 a, footer {
@@ -74,6 +74,7 @@ nav {
     justify-content: center;
     flex-wrap: nowrap;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .logo-holder .logo {
@@ -100,6 +101,7 @@ footer .support-container, footer .contact-container {
 .social {
     display: inline-flex;
     gap: 1.5rem;
+    margin-block: 1rem;
     
 }
 .social img {
@@ -125,5 +127,7 @@ footer .support-container, footer .contact-container {
     main h1, main h2 {
         font-size: 5vw;
     }
-
+    .copyright {
+        font-size: 5vw;
+    }
   }
