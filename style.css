@@ -5,8 +5,14 @@
 
 }   
 
+@font-face {
+    font-family: 'Sinkin';
+    src: url('Assets/SinkinSans-800Black.otf') format('opentype');
+}
+
+
 body {
-    font-family: "Handlee", cursive;
+    font-family: "Sinkin", cursive;
     font-weight: 400;
     font-size: clamp(1.2rem, 5vw + 3rem, 1.8rem);
     overflow-x: hidden;
@@ -39,6 +45,7 @@ main {
 main h1 {
     margin: 0;
     font-size: clamp(1rem, 4vw + 4rem, 10rem);
+    font-family: "Handle", cursive;
 }
 
 h2 {
