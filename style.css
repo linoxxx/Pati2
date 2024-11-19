@@ -8,8 +8,8 @@
 body {
     font-family: "Handlee", cursive;
     font-weight: 400;
-    font-size: clamp(1.3rem, 1.5vw + 1rem, 1.8rem);
-    margin: 0;
+    font-size: clamp(1.2rem, 5vw + 3rem, 1.8rem);
+    overflow-x: hidden;
     font-style: normal;
     letter-spacing: 2px;
     height: auto;
@@ -29,6 +29,16 @@ body {
         hsl(280deg 70% 55%) 100%
       );
     
+}
+
+main {
+    text-align: center;
+    font-weight: bold;
+
+}
+main h1 {
+    margin: 0;
+    font-size: clamp(1rem, 5vw + 4rem, 10rem);
 }
 
 h2 {
@@ -58,25 +68,10 @@ nav, .logo-holder {
 }
 
 .logo-holder .logo {
-    width: 45vw;
+    width: 40vw;
 }
 
-.logo-holder .scroll {
-    max-width: 5%;
-    opacity: 0.4;
-    margin-top: 10vh;
-}
 
-article {
-    width: 65vw;
-    margin: auto;
-    text-align: center;
-}
-
-article .article-line {
-    margin: 3rem auto;
-    
-}
 /* Resets */
 a, img {
     display: block; 
@@ -89,23 +84,23 @@ footer .support-container, footer .contact-container {
     flex-direction: column;
     text-align: center;
     padding: 1rem;
+    width: 65vw;
+    margin: auto;
 }
 
-.donate {
-    border: 1px solid var(--warm-ff-color);
-    border-radius: 15px;
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 1rem;
-}
 
 .social {
     display: inline-flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    
 }
 .social img {
-    width: 3vw;
-    opacity: 0.6;
+    width: calc(7vh - 10px);
+
+}
+
+.social :last-child img {
+    filter: invert(97%) sepia(6%) saturate(632%) hue-rotate(338deg) brightness(94%) contrast(88%);
 }
 
 @media (max-width: 576px) {
@@ -113,6 +108,10 @@ footer .support-container, footer .contact-container {
         width: 90%;
     }
     nav a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
+    .social img {
+        width: calc(8rem - 4vw);
+    }
+    
   }
