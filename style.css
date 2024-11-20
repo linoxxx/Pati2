@@ -181,7 +181,7 @@ footer .support-container, footer .contact-container {
     body {
         margin-inline: 1rem; /* Reduce side margins */
         font-size: clamp(1rem, 2.5vw, 1.5rem); /* Adjust font size */
-        height: fit-content;
+        
     }
 
     nav {
@@ -198,7 +198,6 @@ footer .support-container, footer .contact-container {
     }
 
     .social {
-        flex-wrap: wrap; /* Allow social icons to wrap */
         justify-content: center;
         gap: 1rem;
     }
@@ -213,7 +212,7 @@ footer .support-container, footer .contact-container {
 }
 
 /* For very small screens (e.g., phones) */
-@media (max-width: 480px) {
+@media (max-width: 438px) {
     body {
         margin-inline: 0.5rem; /* Further reduce side margins */
         font-size: clamp(0.9rem, 2vw, 1rem); /* Smaller base font size */
@@ -241,6 +240,7 @@ footer .support-container, footer .contact-container {
 
     footer {
         padding: 0.5rem;
+        font-size: 1vw;
     }
 
     footer .copyright {
