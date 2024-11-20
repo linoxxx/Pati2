@@ -2,6 +2,7 @@
     --violet-color: rgb(166, 59, 220);
     --dark-violet-color: rgb(28,23,33);
     --warm-ff-color: #e3dccc;
+    --gold-color: #c7b705;
 
 }   
 
@@ -90,7 +91,7 @@ nav a {
 nav a:hover {
     transform: scale(1.9);
     margin: 1vw;
-    color: #daca15bc;
+    color: var(--gold-color);
     
 }
   
@@ -104,6 +105,7 @@ a, img {
     height: auto;
     max-width: 100%;
     position: relative;
+    cursor: pointer;
     
 }
 
@@ -123,13 +125,21 @@ footer .support-container, footer .contact-container {
     margin-block: 1rem;
     
 }
+
+
 .social img {
     width: calc(7vh - 10px);
+    transition: all .6s ease-in-out;
 
 }
 
 .social :last-child img {
     filter: invert(97%) sepia(6%) saturate(632%) hue-rotate(338deg) brightness(94%) contrast(88%);
+}
+
+.social img:hover {
+    filter: invert(64%) sepia(99%) saturate(1184%) hue-rotate(15deg) brightness(98%) contrast(96%);
+    transform: scale(1.5);
 }
 
     /* General responsive adjustments */
