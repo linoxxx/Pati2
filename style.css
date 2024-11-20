@@ -140,11 +140,6 @@ footer .support-container, footer .contact-container {
         
     }
 
-    nav {
-        flex-direction: column; /* Stack navigation links */
-        gap: 0.5rem; /* Reduce spacing */
-    }
-
     nav a {
         font-size: 1.2rem; /* Smaller font size for links */
     }
@@ -164,22 +159,23 @@ footer .support-container, footer .contact-container {
 
     footer .copyright {
         font-size: 2vw; /* Smaller font size */
+        margin-bottom: 2rem;
     }
 }
 
 /* For very small screens (e.g., phones) */
-@media (max-width: 438px) {
+@media (max-width: 585px) {
     body {
         margin-inline: 0.5rem; /* Further reduce side margins */
         font-size: clamp(0.9rem, 2vw, 1rem); /* Smaller base font size */
     }
 
     nav {
-        gap: 0.3rem;
+        flex-direction: column; /* Stack navigation links */
+        gap: 0.3rem; /* Reduce spacing */
     }
-
     nav a {
-        font-size: 1rem; /* Smaller navigation links */
+        font-size: 0.7rem; /* Smaller navigation links */
     }
 
     main {
@@ -197,10 +193,6 @@ footer .support-container, footer .contact-container {
     footer {
         padding: 0.5rem;
         font-size: 1vw;
-    }
-
-    footer .copyright {
-        font-size: 4vw; /* Smaller copyright text */
     }
 }
 
