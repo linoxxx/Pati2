@@ -86,6 +86,69 @@ a, img {
     display: block; 
     height: auto;
     max-width: 100%;
+    position: relative;
+    
+}
+a span {
+    transition: all .5s;
+}
+
+a span:nth-child(2){
+    transition-delay: .1s;
+}
+a span:nth-child(3){
+    transition-delay: .2s;
+}
+a  span:nth-child(4){
+    transition-delay: .3s;
+}
+a span:nth-child(5){
+    transition-delay: .4s;
+}
+a span:nth-child(3){
+    transition-delay: .5s;
+}
+a span:nth-child(4){
+    transition-delay: .6s;
+}
+a span:nth-child(5){
+    transition-delay: .7s;
+}
+a span:nth-child(6){
+    transition-delay: .8s;
+}
+a span:nth-child(7){
+    transition-delay: .9s;
+}
+a span:nth-child(8){
+    transition-delay: .10s;
+}
+a span:nth-child(9){
+    transition-delay: .11s;
+}
+
+a:hover span {
+    span{
+        font-weight: 700;
+      }
+      span:nth-child(4){
+        transition-delay: .3s;
+      }
+      span:nth-child(3){
+        transition-delay: .2s;
+      }
+      span:nth-child(2){
+        transition-delay: .1s;
+      }
+      span:nth-child(1){
+        transition-delay: 0s;
+      }
+      
+}
+
+nav a:hover {
+    text-shadow: 1px 1px 0px #732583, 2px 2px 0px #da9797, 3px 3px 0px #ddd;
+    border-color: darkmagenta;
 }
 
 /* Footer Adjustments */
@@ -113,21 +176,75 @@ footer .support-container, footer .contact-container {
     filter: invert(97%) sepia(6%) saturate(632%) hue-rotate(338deg) brightness(94%) contrast(88%);
 }
 
-
-@media (max-width: 955px) {
-    nav {
-        flex-wrap: wrap;
-    }
-    nav a {
-        font-size: 1.3rem;
-    }   
+    /* General responsive adjustments */
+@media (max-width: 1095px) {
     body {
-        display: block;
+        margin-inline: 1rem; /* Reduce side margins */
+        font-size: clamp(1rem, 2.5vw, 1.5rem); /* Adjust font size */
+        height: fit-content;
     }
+
+    nav {
+        flex-direction: column; /* Stack navigation links */
+        gap: 0.5rem; /* Reduce spacing */
+    }
+
+    nav a {
+        font-size: 1.2rem; /* Smaller font size for links */
+    }
+
     main h1, main h2 {
-        font-size: 5vw;
+        font-size: clamp(1.8rem, 5vw, 3rem); /* Adjust heading sizes */
     }
-    .copyright {
-        font-size: 5vw;
+
+    .social {
+        flex-wrap: wrap; /* Allow social icons to wrap */
+        justify-content: center;
+        gap: 1rem;
     }
-  }
+
+    .social img {
+        width: calc(5vh - 5px); /* Scale social icons */
+    }
+
+    footer .copyright {
+        font-size: 2vw; /* Smaller font size */
+    }
+}
+
+/* For very small screens (e.g., phones) */
+@media (max-width: 480px) {
+    body {
+        margin-inline: 0.5rem; /* Further reduce side margins */
+        font-size: clamp(0.9rem, 2vw, 1rem); /* Smaller base font size */
+    }
+
+    nav {
+        gap: 0.3rem;
+    }
+
+    nav a {
+        font-size: 1rem; /* Smaller navigation links */
+    }
+
+    main {
+        margin-block: 2vh;
+    }
+
+    main h1, main h2 {
+        font-size: clamp(1.5rem, 4.5vw, 2.5rem); /* Adjust heading sizes */
+    }
+
+    .social img {
+        width: calc(4vh - 2px); /* Further reduce icon sizes */
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+
+    footer .copyright {
+        font-size: 4vw; /* Smaller copyright text */
+    }
+}
+
