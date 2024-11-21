@@ -54,10 +54,19 @@
         </div>
       
       </div>
+      <div class="cookies-banner" id="cookiesBanner">
+        This website uses cookies to ensure you get the best experience. 
+        <button onclick="closeBanner()">Got it</button>
+    </div>
     </footer>
+   
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
    <script>
     AOS.init();
+
+    function closeBanner() {
+            document.getElementById('cookiesBanner').style.display = 'none';
+        }
    </script>
 </body>
 </html>

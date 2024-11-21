@@ -247,6 +247,7 @@ footer .support-container, footer .contact-container {
     padding: 1rem;
     width: 65vw;
     margin: auto;
+    
 }
 
 
@@ -320,6 +321,9 @@ footer .support-container, footer .contact-container {
     }
 }
 
+footer .copyright {
+    margin-bottom: 2rem;
+}
 /* For very small screens (e.g., phones) */
 @media (max-width: 585px) {
     body {
@@ -382,4 +386,34 @@ main article {
 
 main article img {
     align-self: center;
+}
+
+/* Cookies */
+.cookies-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-violet-color);
+    opacity: 0.8;
+    color: var(--warm-ff-color);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    z-index: 1000;
+}
+.cookies-banner button {
+    background-color: var(--gold-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 6px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.cookies-banner button:hover {
+    background-color: var(--violet-color);
 }
